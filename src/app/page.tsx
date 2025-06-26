@@ -200,17 +200,17 @@ export default function Home() {
             </div>
 
             {/* Glass Achievement Cards */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            <div className="grid grid-cols-2 gap-6 max-w-2xl mx-auto">
               {achievements.map((achievement, index) => (
                 <div key={index} className="group relative">
                   <div className="absolute inset-0 bg-gradient-to-br from-black/40 to-black/20 backdrop-blur-2xl rounded-3xl shadow-lg shadow-black/30"></div>
-                  <div className="relative bg-gradient-to-br from-blue-400/15 to-purple-500/10 backdrop-blur-2xl rounded-3xl p-6 border border-white/30 hover:border-blue-400/60 transition-all duration-500 group-hover:transform group-hover:scale-105 shadow-lg shadow-black/20">
+                  <div className="relative bg-gradient-to-br from-blue-400/15 to-purple-500/10 backdrop-blur-2xl rounded-3xl p-8 border border-white/30 hover:border-blue-400/60 transition-all duration-500 group-hover:transform group-hover:scale-105 shadow-lg shadow-black/20">
                     <div className="flex items-center justify-center mb-4">
                       <div className="w-12 h-12 bg-gradient-to-r from-blue-400/30 to-purple-500/30 backdrop-blur-xl rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-blue-500/20">
                         <achievement.icon size={24} className="text-blue-400" />
                       </div>
                     </div>
-                    <div className="text-3xl font-bold text-blue-400 mb-2">
+                    <div className="text-4xl font-bold text-blue-400 mb-2">
                       {achievement.value}
                     </div>
                     <div className="text-white font-medium text-sm">{achievement.label}</div>
@@ -237,20 +237,20 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="grid lg:grid-cols-3 gap-8">
+            <div className="flex flex-col items-center space-y-8 max-w-4xl mx-auto">
               {services.map((service, index) => (
-                <div key={index} className="group relative">
+                <div key={index} className="group relative w-full max-w-3xl">
                   <div className={`absolute inset-0 bg-gradient-to-br ${service.gradient} backdrop-blur-2xl rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700`}></div>
-                  <div className="relative bg-black/30 backdrop-blur-2xl rounded-3xl p-8 border border-white/20 hover:border-white/30 transition-all duration-500 h-full shadow-lg shadow-black/30">
+                  <div className="relative bg-black/30 backdrop-blur-2xl rounded-3xl p-10 border border-white/20 hover:border-white/30 transition-all duration-500 shadow-lg shadow-black/30">
                     <div className="flex items-center justify-center mb-8">
                       <div className={`w-20 h-20 bg-gradient-to-br from-black/40 to-black/20 backdrop-blur-xl rounded-3xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-lg shadow-black/30`}>
                         <service.icon size={40} className="text-white" />
                       </div>
                     </div>
-                    <h3 className="text-2xl font-bold mb-6 text-center text-white">
+                    <h3 className="text-3xl font-bold mb-6 text-center text-white">
                       {service.title}
                     </h3>
-                    <p className="text-white/80 leading-relaxed text-center font-light">
+                    <p className="text-white/80 leading-relaxed text-center font-light text-lg">
                       {service.description}
                     </p>
                   </div>
