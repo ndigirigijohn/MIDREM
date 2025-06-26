@@ -233,7 +233,7 @@ export default function Home() {
                 </span>
               </h2>
               <p className="text-xl text-white/80 max-w-3xl mx-auto font-light">
-                Revolutionary financial tools built for privacy, designed for Africa's mobile economy.
+                Revolutionary financial tools built for privacy, designed for Africa&apos;s mobile economy.
               </p>
             </div>
 
@@ -273,7 +273,7 @@ export default function Home() {
                   <span className="text-white">INCLUSION</span>
                 </h2>
                 <p className="text-xl text-white/80 mb-8 leading-relaxed font-light">
-                  Designed specifically for Africa's unique financial landscape with 
+                  Designed specifically for Africa&apos;s unique financial landscape with 
                   mobile-first architecture and regulatory compliance.
                 </p>
 
@@ -392,7 +392,7 @@ export default function Home() {
                 </div>
                 <p className="text-white/60 max-w-md leading-relaxed font-light">
                   Privacy-first financial inclusion platform for Africa. 
-                  Powered by Midnight Network's zero-knowledge technology.
+                  Powered by Midnight Network&apos;s zero-knowledge technology.
                 </p>
               </div>
               
